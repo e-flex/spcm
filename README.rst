@@ -1,9 +1,10 @@
+#########################
 Simple PHP Contact Mailer
 #########################
 
 The *Simple PHP Contact Mailer* works by getting a POST request from the contact form in the ``contact.html`` file and then try to figure out if the data is SPAM and then send it along to you via email.
 
-The steps to verify if it is SPAM or not is the following:
+The steps to verify if it is SPAM or not are the following:
     #. See if reCaptcha accepts the request.
     #. See if the IP address has made a request within the threshold.
     #. Sanitise the data a bit.
