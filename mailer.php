@@ -7,6 +7,8 @@
     $emailTo = "contact@example.com";
     // The timeout threshold, in seconds, for your visitors, set to 5 hours by default.
     $request_timeout_threshold = 60*60*5;
+    // reCaptcha secret
+    $reCaptcha_secret = "BIG_SECRET_NUMBER"
 
     // DDoS protection; uncomment this to disable the script
     // header('Location: /confirmation_page.html');
@@ -74,7 +76,7 @@
         $theIpAddress = getRealIpAddr();
 
         $captcha_post_data = array(
-                           'secret' => 'CAPTCHA_SECRET',
+                           'secret' => $reCaptcha_secret,
                            'response' => $_POST['g-recaptcha-response']
                            );
         $captcha_response_data = curl_post_json('https://www.google.com/recaptcha/api/siteverify', $captcha_post_data);
