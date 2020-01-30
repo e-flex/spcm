@@ -17,9 +17,9 @@ Usage
 #. Upload the ``mailer.php``, ``contact.html``, ``error_page.html``, ``filter.sqlite`` and ``confirmation_page.html`` to the root of your server, all in the same folder.
 #. Browse to the ``contact.html`` file on your server, like ``example.com/contact.html`` for example.
 
-Set-up
+Database Set-up
 -----
-You can also set up an sqlite file with the following tables::
+The database file is created with the following statement::
 
     CREATE TABLE `messages` (
         `id`    INTEGER,
