@@ -8,7 +8,7 @@
     // The timeout threshold, in seconds, for your visitors, set to 5 hours by default.
     $request_timeout_threshold = 60*60*5;
     // reCaptcha secret
-    $reCaptcha_secret = "BIG_SECRET_NUMBER"
+    $reCaptcha_secret = "BIG_SECRET_NUMBER";
 
     // DDoS protection; uncomment this to disable the script
     // header('Location: /confirmation_page.html');
