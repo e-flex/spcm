@@ -1,2 +1,3 @@
 *.sublime-workspace
 *.sqlite-journal
+*.sublime-project
